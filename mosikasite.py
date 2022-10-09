@@ -1,6 +1,5 @@
 import re
 import requests
-from bs4 import BeautifulSoup
 
 query = input('Word: ')
 
@@ -10,8 +9,6 @@ res = requests.get(f'https://www.google.com/search?q={query}&hl=ja', headers={
                    'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.79 Mobile Safari/537.36'})
 
 print(res.status_code)
-
-soup = BeautifulSoup(res.text, 'html.parser')
 
 mosikasite = input('表示したい文字を入力してください: ')
 

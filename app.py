@@ -2,8 +2,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import requests
 import re
-app = Flask(__name__)
 
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -23,4 +23,5 @@ def create():
     #              '<style>font-family: Roboto,Helvetica Neue,Arial,sans-serif;font-size: small;-webkit-text-size-adjust: 100%;color: #1558d6;-webkit-tap-highlight-color: rgba(0,0,0,.1);max-height: 999999px;background: url(/images/nav_logo325_hr.webp) no-repeat;background-position: 0 -374px;background-size: 167px;height: 36px;width: 92px;</style><div class="HK0d3e" aria-label="Google"></div>', html)
     return html
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run()
