@@ -1,23 +1,26 @@
 # mosikasite-generator
 
-This is a simple static site generator for my personal website. It is written in Python and uses Jinja2 for templating.
+Google検索にたまに現れる、「もしかして: 」を再現できるサイトです。
+検索結果には、検索したキーワードに関連するサイトのタイトルとURLがそのまま表示されます。
 
-## Installation
+## インストール
 
-Clone the repository and install the requirements:
+リポジトリをクローンして、必要なものをインストールします。
 
 ```bash
-git clone
+git clone 
 cd mosikasite-generator
 pip install -r requirements.txt
 ```
 
-## Usage
+## 使用方法
 
-### command line
+flaskを使う方法と、コマンドラインで実行する方法があります。
 
-To generate the site, run `python3 mosikasite.py`. This will generate the site in the `output` directory.
+### コマンドライン
 
-### flask app
+サイトを生成するには、`python3 mosikasite.py`を実行します。これにより、`output`ディレクトリにサイトが生成されます。
 
-To run the flask app, run `python3 app.py`. This will start a flask server on port 5000.
+### フラスクアプリ
+
+flaskアプリを実行するには、`python3 app.py`を実行します。すると、ポート`5000`でflaskサーバーが起動します。
